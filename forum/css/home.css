@@ -1,0 +1,316 @@
+*{
+    box-sizing: border-box;
+}
+
+.dark {
+    background-color: #333;
+    color: #fff;
+}
+
+/**********************\
+  HAPPY LEARNERS
+\**********************/
+.happy_learners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Style individual testimonial */
+.members {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+/* Style the image container (circle) */
+.members .one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.members .one img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimony {
+    text-align: left;
+    max-width: 300px; 
+}
+
+.testimony p {
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+
+.testimony p::before {
+    content: "“"; /* Add opening quote */
+    font-size: 2em;
+    line-height: 0.1em;
+    margin-right: 0.1em;
+    vertical-align: -0.4em;
+    color: #888; 
+}
+.testimony p::after {
+    content: "”"; /* Add closing quote */
+    font-size: 2em;
+    line-height: 0.1em;
+    margin-left: 0.1em;
+    vertical-align: -0.4em;
+    color: #888;
+}
+
+
+/*****************************\
+CORE FEATURES
+\*****************************/
+
+
+/*.core_features {
+    margin: 10px;
+    background-color: #c77f7f;
+    font-family: Arial, sans-serif;
+    align-items: center;
+    text-align: center;
+}*/
+
+/* Style the unordered list */
+/*.core_features ul {
+    list-style-type: none;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.core_features ul li {
+    margin-right: 20px;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 4px;
+    border-bottom: 4px solid #3498db;
+}
+
+.core_features ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.core_features ul li:hover { background-color: #cccbcf;}*/
+
+/* Style the introductory paragraphs */
+/*.core_features p {
+    font-size: 1.2em;
+    color: #333;
+    margin: 10px 0;
+}*/
+
+/* Style the text within the "write" paragraph */
+/*.core_features p.write {
+    font-weight: bold;
+}*/
+
+/*.core_features p.write span {
+    color: #3498db; /* Add a different color for emphasis */
+/*}*/
+
+.core_features {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c08888; /* Background color for the navigation bar */
+    padding: 10px 20px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0.5rem;
+    right: 10px;
+    left: 10px;
+  }
+  
+  .feature-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .feature-list li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .core_features ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+  .menu-button {
+    display: none; /* Initially hide the menu button */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Media query for small screens */
+  @media (max-width: 768px) {
+    .feature-list {
+      display: none; /* Hide the feature links */
+      flex-direction: column;
+      position: absolute;
+      top: 60px; 
+      right: 20px;
+      background-color: #333;
+      z-index: 1;
+    }
+
+    .core_features{
+        width: 50px;
+    }
+  
+    .menu-button {
+      display: block; /* Show the menu button */
+    }
+  
+    .menu-button.open {
+      display: none; /* Hide the menu button when the menu is open */
+    }
+  
+    .menu-button.close {
+      display: block; /* Show the close button when the menu is open */
+    }
+  }
+  
+
+/*****************************\
+CALL TO ACTION
+\*****************************/
+
+.call_to_action {
+    width: 60%; /* Set the width to 60% */
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: center; /* Center the button text */
+    margin-bottom: 20px;
+}
+
+/* Style the call button */
+.call_to_action .call {
+    background-color: goldenrod;
+    color: #fff; /* Text color */
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underlines from links */
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+/* Remove default link styles */
+.call_to_action .call a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style the button on hover */
+.call_to_action .call:hover {
+    background-color: #d4a600; /* Darker shade on hover */
+}
+
+
+
+/****************************\
+  NOTIFICATION
+\****************************/
+
+#notification{
+  display: none;
+}
+
+
+/****************************\
+  MOBILE MENU
+\****************************/
+
+nav .top_bar_nav{
+    display: none;
+}
+
+/****************************\
+  FLAGS
+\****************************/
+
+.language_flags{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 2rem;
+    background: #e2dcdc;
+    border-radius: 20px;
+    box-shadow: 12px 8px 2px #816060;
+    width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+    align-items: start;
+}
+
+p.welcome{
+    font-weight: 600;
+    color: #413131;
+
+}
+
+p.write{
+    color: #0e95f0;
+}
+
+/***********************\
+  TYPEWRITER
+\***********************/
+
+/* Styling for the typewriter effect */
+.typewriter {
+    display: inline;
+    overflow: hidden;
+    border-right: 0.08em solid #000; /* Typing cursor effect */
+    white-space: nowrap;
+    margin: 0;
+    letter-spacing: 0.1em;
+    animation: typing 3s steps(20, end), blink-caret 0.5s step-end infinite;
+}
+
+/* Keyframes for the typewriter animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #000;
+    }
+}
+
+
+/* Media query for screens 768px and below */
+
+@media (max-width: 768px) {
+    .members {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

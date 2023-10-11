@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link rel="icon" href="/img/avatar.png"  type="avatar/png">
+    <link rel="stylesheet" href="/css/profile.css">
+</head>
+<body>
+    <!-- header -->
+    <div id="1"></div>
+    <script>
+        load("header.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script>
+
+<div class="profile-section">
+    <div class="profile-picture">
+        <img src="/img/happy_readers/milner.jpg" alt="Profile Picture">
+    </div>
+    <div class="profile-info">
+        <h2>John Doe</h2>
+        <p>Languages Spoken: English, French, Spanish</p>
+        <p>Language Learning: German, Italian</p>
+        <p>Proficiency Levels: English (Advanced), French (Intermediate), Spanish (Beginner)</p>
+        <button class="connect-button"><a href="language_partner.html">find friends</a></button>
+    </div>
+</div>
+
+<div class="friends">
+    <h3 class="friends_h">friends</h3>
+    <div class="friend">
+       <div class="profile-picture">
+          <img src="/img/happy_readers/betty.jpg" alt="milner">
+       </div>
+       <div class="profile-info">
+           <p>languages spoken: french</p>
+           <p>language learning: german</p>
+           <p>proficiency level: advanced</p>
+           <button class="friends-btn">view profile</button>
+        </div>
+    </div>
+    <div class="friend">
+        <div class="profile-picture">
+           <img src="/img/happy_readers/betty.jpg" alt="milner">
+        </div>
+        <div class="profile-info">
+            <p>languages spoken: french</p>
+            <p>language learning: german</p>
+            <p>proficiency level: advanced</p>
+            <button class="friends-btn">view profile</button>
+         </div>
+     </div>
+     <div class="friend">
+        <div class="profile-picture">
+           <img src="/img/happy_readers/betty.jpg" alt="milner">
+        </div>
+        <div class="profile-info">
+            <p>languages spoken: french</p>
+            <p>language learning: german</p>
+            <p>proficiency level: advanced</p>
+            <button class="friends-btn">view profile</button>
+         </div>
+     </div>
+     <div class="friend">
+        <div class="profile-picture">
+           <img src="/img/happy_readers/betty.jpg" alt="milner">
+        </div>
+        <div class="profile-info">
+            <p>languages spoken: french</p>
+            <p>language learning: german</p>
+            <p>proficiency level: advanced</p>
+            <button class="friends-btn">view profile</button>
+         </div>
+     </div>
+     <div class="friend">
+        <div class="profile-picture">
+           <img src="/img/happy_readers/betty.jpg" alt="milner">
+        </div>
+        <div class="profile-info">
+            <p>languages spoken: french</p>
+            <p>language learning: german</p>
+            <p>proficiency level: advanced</p>
+            <button class="friends-btn">view profile</button>
+         </div>
+     </div>
+</div>
+
+<div class="find_friends">
+    <p><a href="language_partner.html">connect with more frinds</a></p>
+</div>
+
+    <!-- FOOTER -->
+    <div id="4"></div>
+    <script>
+        load("footer.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(4).innerHTML = req.responseText;
+        }
+    </script>
+</body>
+</html>

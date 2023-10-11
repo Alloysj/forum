@@ -1,0 +1,107 @@
+/* Style the profile section container */
+.profile-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Style the profile picture */
+.profile-picture img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #3498db; /* Add a border and color */
+    object-fit: cover;
+}
+
+/* Style the profile information */
+.profile-info {
+    margin-left: 20px;
+}
+
+.profile-info h2 {
+    font-size: 1.5em;
+    margin: 0;
+    color: #333;
+}
+
+.profile-info p {
+    margin: 5px 0;
+    color: #777;
+}
+
+/* Style the connect button */
+.connect-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Add a smooth hover effect */
+}
+
+button:hover {
+    background-color: #08314d; /* Darker shade on hover */
+}
+
+a{
+    text-decoration: none;
+    color: #1ce2a0;
+}
+
+.friends{
+    display: block;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 2px solid #a5a1a1;
+    border-radius: 5px;
+    padding: 50px;
+}
+
+h3.friends_h{
+    font-weight: bold;
+    text-align: center;
+    color: #7c34db;
+    border-bottom: 5px solid #333;
+    background: #777;
+}
+
+.friend{
+    display: flex;
+    border: 1px solid #777;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.7);;
+}
+
+button.friends-btn{
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+    .profile-section .friends {
+        flex-direction: column;
+        text-align: center;
+    }
+    .profile-picture img {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linguic</title>
+    <link rel="stylesheet" href="/css/home.css" type="text/css">
+    <link rel="icon" href="/img/avatar.png"  type="avatar/png">
+</head>
+<body>
+    <div class="theme">
+        <button id="theme">change theme</button>
+    </div>
+    <!-- header -->
+    <div id="1"></div>
+    <script>
+        load("header.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script>
+    <div class="hero">
+        <ion-icon name="home-outline"></ion-icon>
+        <div class="core_features" id="2">
+            <ul class="feature-list">
+              <li><ion-icon name="person-circle-outline"></ion-icon><a href="profile.html">Profile</a></li>
+              <li><ion-icon name="person-add-outline"></ion-icon><a href="language_partner.html">Language Partners</a></li>
+              <li><a href="language_class.html">Language Classes</a></li>
+              <li><ion-icon name="book-outline"></ion-icon><a href="#resources">Resources</a></li>
+              <li><img src="/img/challenge.png" alt="challenge" height="30px" width="30px"><a href="challenges.html">Challenges</a></li>
+              <li><ion-icon name="chatbubble-ellipses-outline"></ion-icon><a href="messaging.html">Messaging</a></li>
+            </ul>
+            <button id="menu-button" class="menu-button"><ion-icon name="menu-outline"></ion-icon></button>
+        </div>
+          
+        
+        <div class="language_flags">
+            <p class="welcome">Let`s learn and explore the world together.</p>
+            <p class="write">Welcome, let's <span class="typewriter"></span>.</p>
+            <p>Find a language to learn</p>
+            <div class="languages">
+               <label for="languages">select a language</label>
+               <select name="lang" id="lang">
+                <option value="Indian">Indian</option>
+                <option value="English">English</option>
+                <option value="Chinese">Chinese</option>
+                <option value="French">French</option>
+                <option value="German">German</option>
+                <option value="Spanish">Spanish</option>
+                <option value="Swahili">Swahili</option>
+                <option value="Japanese">Japanese</option>
+                <option value="Indian">Indian</option>
+                <option value="Portualgese">Portualgese</option>
+                <option value="Arab">Arab</option>
+                <option value="French">French</option>
+                <option value="spanish">spanish</option>
+                <option value="German">German</option>
+                <option value="Swahili">Swahili</option>
+                <option value=""></option>
+               </select>
+            </div>
+        </div>
+        <div class="happy_learners">
+            <div class="members">
+                <div class="one">
+                    <img src="/img/happy_readers/dotdot.jpg" alt="dot dot">
+                    <div class="testimony">
+                        <p>I am dot dot from hungary. I joined this website last year and managed to learn <B>english</B>. I got lots of support from their expert sessions and grew my language fast by tackling challenges in the forum</p>
+                    </div>
+                </div>
+                <div class="one">
+                    <img src="/img/happy_readers/betty.jpg" alt="dot dot">
+                    <div class="testimony">
+                        <p>I am dot dot from hungary. I joined this website last year and managed to learn <B>english</B>. I got lots of support from their expert sessions and grew my language fast by tackling challenges in the forum</p>
+                    </div>
+                </div>
+                <div class="one">
+                    <img src="/img/happy_readers/james.jpg" alt="dot dot">
+                    <div class="testimony">
+                        <p>I am dot dot from hungary. I joined this website last year and managed to learn <B>english</B>. I got lots of support from their expert sessions and grew my language fast by tackling challenges in the forum</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="call_to_action">
+            <button class="call"><a href="#">Find a languag partner</a></button>
+        </div>
+    </div>
+  
+
+    <!--
+        language switcher
+    -->
+
+
+    <!--
+        Navigation
+    -->
+
+    <nav>
+        <div class="top_bar_nav">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="language_partner.html">language partners</a></li>
+                <li><a href="language_class.html">language classes</a></li>
+                <li><a href="#resources">resources</a></li>
+                <li><a href="challenges.html">Challenges</a></li>
+                <li><a href="profile.html">profile</a></li>
+                <li><a href="#notification">notifications</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--
+        notification
+    -->
+   
+    <div class="notifications" id="notification">
+        <div class="alerts">
+            <div class="new_msg">
+                <p>you have a new message</p>
+            </div>
+            <div class="upcoming_class">
+                <p>You have an upcoming class</p>
+            </div>
+            <div class="challenge_update">
+                <p>you have a challenge in 1 day(s)</p>
+            </div>
+            <div class="friend_request">
+                <p>you have a new friend request</p>
+            </div>
+        </div>
+        <div class="notification_center" id="notification_center">
+            <p>get notified about</p>
+            <!-- management of notifications-->
+            <p>new message</p>
+            <p>upcoming challenge</p>
+            <p>upcoming class</p>
+            <p>friend request</p>
+            <p>mentions</p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="4"></div>
+    <script>
+        load("footer.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(4).innerHTML = req.responseText;
+        }
+    </script>
+    <script src="/js/home.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

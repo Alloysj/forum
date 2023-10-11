@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <link rel="stylesheet" href="/css/sign_in.css">
+    <link rel="icon" href="/img/avatar.png"  type="avatar/png">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="/img/linguic logo.png" alt="logo">
+        </div>
+    </header>
+    
+    <section>
+        <form action="form.php" method="post">
+            <div class="sign_up">
+                <label for="email">Email</label>
+                <input type="email" placeholder="enter your email" required>
+                <p>password</p>
+                <input type="password" name="password" id="1" required>
+                <p>confirm password</p>
+                <input type="password" name="password" id="2" required>
+                <div>
+                    <label for="gender1">male</label>
+                    <input type="radio" id="gender1" name="gender" value="male" />
+
+                    <label for="gender2">female</label>
+                    <input type="radio" id="gender2" name="gender" value="female" />
+
+                    <label for="gender3">not defined</label>
+                    <input type="radio" id="gender3" name="gender" value="not defined" />
+                </div>
+                <input type="submit" value="sign up">
+            </div>
+        </form>
+    </section>
+</body>
+</html>
